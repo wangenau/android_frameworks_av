@@ -90,6 +90,8 @@ endif
 
 LOCAL_MODULE:= libaudioflinger
 
+LOCAL_CFLAGS += -fno-ipa-pta
+
 LOCAL_SRC_FILES += FastMixer.cpp FastMixerState.cpp AudioWatchdog.cpp
 
 LOCAL_CFLAGS += -DSTATE_QUEUE_INSTANTIATIONS='"StateQueueInstantiations.cpp"'
